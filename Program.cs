@@ -13,7 +13,7 @@ namespace ExLineRichMenuautomaticOpeningAndClosing
 
             //建立Actions
             var Actions = new List<isRock.LineBot.TemplateActionBase>();
-          
+
             Actions.Add(new isRock.LineBot.PostbackAction() //UriAction
             {
                 label = "開選單",
@@ -28,11 +28,12 @@ namespace ExLineRichMenuautomaticOpeningAndClosing
                 displayText = "關選單",
                 inputOption = "closeRichMenu"
             });
-              Actions.Add(new isRock.LineBot.PostbackAction() //UriAction
+            Actions.Add(new isRock.LineBot.PostbackAction() //UriAction
             {
                 label = "開鍵盤",
                 data = "openKeyboard",
                 displayText = "開鍵盤",
+                fillInText = "預設文字",
                 inputOption = "openKeyboard"
             });
             Actions.Add(new isRock.LineBot.PostbackAction() //UriAction
